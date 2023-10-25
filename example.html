@@ -1,0 +1,144 @@
+<html>
+<head>
+    <style>
+        .body-container {
+            box-sizing: border-box;
+            font-family: "微軟正黑體";
+            padding: 10px 15px;
+            width: 100%;
+            max-width: 800px;
+            letter-spacing: 1px;
+        }
+        .block-container {
+            display: flex;
+            margin: 10px 0;
+            padding: 10px 15px;
+            border-radius: 5px;
+            background: #f0f2f7;
+            overflow: visible;
+        }
+        .block-others {
+            background: #f5f5f5;
+        }
+        .block-schedule {
+            background: #fff6f8;
+        }
+        .block-box {
+            padding: 5px 15px;
+            width: 49%;
+            font-size: 12px;
+            line-height: 20px;
+            border-right: solid 1px white;
+        }
+        .block-container .block-box:first-child {
+            padding-left: 0;
+        }
+        .block-container .block-box:last-child {
+            border: none;
+        }
+        .tag {
+            display: inline-block;
+            margin-left: 2px;
+            padding: 0 10px;
+            border-radius: 10px;
+            background: #3db013;
+            font-size: 13px;
+            line-height: 20px;
+            color: white;
+        }
+        .tag-progress {
+            background: #67b3e5;
+        }
+        hr {
+            margin: 15px 0;
+            border: none;
+            border-top: 1px solid lightgray;
+        }
+        h2, h3 {
+            margin: 0;
+            padding: 0;
+        }
+        ul {
+            margin: 0;
+            margin-left: 15px;
+            padding: 0;
+        }
+        .flex-n {
+            width: auto;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="body-container">
+        
+        <h2>Title</h2>
+        <hr />
+        
+        <h3>
+            Sub-Title
+            <span class="tag">done</span>
+        </h3>
+        <div class="block-container">
+            <div class="block-box">
+                <ul>
+                    <li><b>feat:</b> </li>
+                    <ul>
+                        <li>aaa</li>
+                        <li>bbb</li>
+                    </ul>
+                    <li><b>feat:</b> </li>
+                    <li><b>fix:</b> </li>
+                </ul>
+            </div>
+            <div class="block-box">
+                <b>[ Memo ]</b>
+                <ul>
+                    <li>aaa</li>
+                    <li>bbb</li>
+                    <li>ccc</li>
+                </ul>
+            </div>
+        </div>
+        
+        <br />
+        <h2>Title</h2>
+        <hr />
+        
+        <h3>
+            Sub-Title
+            <span class="tag tag-progress">in progress</span>
+        </h3>
+        <div class="block-container block-others">
+            <div class="block-box">
+                <ul>
+                    <li>aaa</li>
+                </ul>
+            </div>
+            <div class="block-box">
+                <ul>
+                    <li>Emergency</li>
+                </ul>
+            </div>
+        </div>
+        
+        
+        <br />
+        <h2>Schedule</h2>
+        <hr />
+        
+        <div class="block-container block-schedule">
+            <div class="block-box flex-n">
+                <b>Sub-Title</b>
+            </div>
+            <div class="block-box">
+                <ul>
+                    <li>aaa</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
